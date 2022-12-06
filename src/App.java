@@ -5,7 +5,13 @@ public class App {
         Scanner sc = new Scanner(System.in);
         System.out.print("Informe um número: ");
         String numero=sc.nextLine();
-        System.out.println("\nQuantidade de dígitos: "+numero.length());
         sc.close();
+
+        quantN(numero);
+
+    }
+
+    static void quantN(String numero){
+        System.out.println("\nQuantidade de dígitos: "+numero.length());
     }
 }
